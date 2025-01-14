@@ -41,7 +41,7 @@ exports.handler = async function (event, context) {
                 let success_message = "This ban appeal has been approved and the user has been unbanned from your server"
                 if (process.env.REACT_APP_ENABLE_SENDGRID) {
                     await sendUnbanEmail(unbanInfo, event.headers.host)
-                    success_message += " and notified via email that they can rejoin with the provided invite"
+                    success_message += " and notified via email that they can rejoin with the provided invite. Please check Spam folder if you don't see it!"
                 }
                 success_message += "."
                 return {
