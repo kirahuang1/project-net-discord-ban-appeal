@@ -60,6 +60,9 @@ body {
   background-color: #5865F2 !important;
   width: 15em;
   color: white !important;
+  position: fixed; /* or absolute */
+  left: 12%;
+  
 }
 
 button {
@@ -92,4 +95,5 @@ form button {
 
 h1 {
   width: 100%;
+  text-shadow: 1px 1px black;
 }
